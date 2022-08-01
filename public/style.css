@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 2rem;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 1.2rem;
+}
+
+nav h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+nav img{
+    width: 5%;
+}
+
+header img{
+    width: 100%;
+    margin: 6rem 0 0 0;
+}
+
+main{
+    margin: 0 10rem 0 10rem;
+}
+
+section#cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+section#cards h2{
+    width: 100%;
+    text-align: center;
+    padding: 0 0 2rem 0;
+}
+
+section#cards div.card{
+    width: 20rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: inset 0 0 1em gold, 0 0 1em red;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+section#cards div.card img{
+    width: 100%;
+}
+
+section#cards div.card h3{
+    margin-bottom: 0;
+}
+
+section#cards div.card p.descricao{
+    margin-bottom: 1rem;
+}
+
+section#cadastro{
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+section#cadastro img{
+    width: 50%;
+}
+
+section#cadastro form{
+    width: 100%;
+}
+
+section#cadastro h2{
+    width: 100%;
+    text-align: center;
+    padding: 0 0 1.5rem 0;
+}
+
+section#cadastro form input{
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    border: solid 2px rgb(189, 186, 186);
+    margin: 0 0 1rem 0;    
+}
+
+section#cadastro form label{
+    color: rgb(95, 95, 95);
+}
+
+section#cadastro form button{
+    padding: .6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: .5rem;
+    font-size: 1rem;
+    background-color: white;
+    color: red;
+    border-color: red;
+}
+
+section#cadastro form button:hover{
+    background-color: red;
+    color: white;
+    transition: .19s;
+    cursor: pointer;
+}
+
+section#cards div.card a{
+    padding: .6rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid blue;
+    border-radius: .5rem;
+    font-size: 1rem;
+    background-color: white;
+    color: blue;
+    border-color: blue;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+section#cards div.card a:hover{
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    transition: .19s;
+    cursor: pointer;
+}
+
+section#cards div.card a#deletar{
+    padding: .6rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: .5rem;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+section#cards div.card a#deletar:hover{
+    background-color: white;
+    color: red;
+    transition: .19s;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+footer{
+    background-color: red;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+footer p{
+    padding: .5rem;
+}
+
+footer p a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer p a:hover{
+    color: rgb(255, 230, 43);
+    transition: .5s;
+    font-size: 1.22rem;
+}
+
+@media (max-width: 978px) {
+    section#cadastro img{
+        display: none;
+    }
+}
