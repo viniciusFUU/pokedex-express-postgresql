@@ -92,7 +92,12 @@ section#cadastro{
 }
 
 section#cadastro img{
+    margin-top: 5rem;
     width: 50%;
+}
+
+section#cadastro div{
+    margin-top: 6rem;
 }
 
 section#cadastro form{

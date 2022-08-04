@@ -9,6 +9,15 @@ const getAll = async (req, res) => {
   }
 };
 
+const signup = (req, res) => {
+  try {
+    res.render("signup");
+  } catch (err) {
+    res.status(500).send({ ett: err.message });
+  }
+};
+
 module.exports = {
   getAll,
+  signup,
 };
