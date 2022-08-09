@@ -9,6 +9,10 @@
     
     <header>
         <img src="https://nitter.net/pic/https%3A%2F%2Fpbs.twimg.com%2Fprofile_banners%2F2975322304%2F1442064450%2F1500x500" alt="">
+        <% if(message != "") { %>
+            <%- include('./components/alerts') %>
+        <% } %>
+
     </header>
     
     <main>    
@@ -44,5 +48,6 @@
     
     <%- include('./components/footer') %>   
 
+    <script src="/script.js"></script>
 </body>
 </html>

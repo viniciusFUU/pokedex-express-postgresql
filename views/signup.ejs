@@ -12,6 +12,9 @@
         <img src="https://mlohrktvfr9b.i.optimole.com/scftOdE.tVDx~16b5e/w:702/h:702/q:90/https://www.nerdstickers.com.br/wp-content/uploads/2020/11/adesivo-Pokedex-Air-Force-1-danilo-the-hype-nerd-stickers.png" alt="Pokedex">
 
         <div>
+            <% if(message != "") { %>
+                <%- include('./components/alerts') %>
+            <% } %>
 
                 <h2>Cadastre um novo pokemon!</h2>
     
@@ -45,6 +48,8 @@
     </section>
 
     <%- include('./components/footer') %>
+
+    <script src="/script.js"></script>
 
 </body>
 </html>
