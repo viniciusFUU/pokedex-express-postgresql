@@ -15,8 +15,6 @@
 
         <section id="cards">
 
-            <h2>Lista de pokemons</h2>
-
             <% pokedex.forEach((pokemon) => { %>
         
                 <div class="card">
@@ -27,14 +25,22 @@
                     <p>Altura: <%= pokemon.altura %></p>
                     <p>Peso: <%= pokemon.peso %></p>
                     <p>Habilidade: <%= pokemon.habilidade %></p>
-                    <a id="editar" href="/detalhes/<%= pokemon.id %>">Editar</a>
-                    <a id="deletar" href="/delete/<%= pokemon.id %>">Apagar</a>
+                    <a id="editar" href="/getById/<%= pokemon.id %>/put">Editar</a>
+                    <a id="deletar" href="/getById/<%= pokemon.id %>/delete">Apagar</a>
                 </div>
         
             <%  })  %>
             </section>
             
     </main>
+
+    <% if(pokemonPut != null){%>
+        <%- include('./components/modalPut') %> 
+    <% } %>
+
+    <% if(pokemonDel != null){%>
+        <%- include('./components/modalDel') %> 
+    <% } %>
     
     <%- include('./components/footer') %>   
 

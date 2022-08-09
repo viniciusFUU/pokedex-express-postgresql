@@ -1,0 +1,20 @@
+<section class="modal-overlay" id="overlay">
+    <div class="modal" id="modal">
+
+        <div class="modal-header">
+            <h3>Atualizar pokemon</h3>
+            <a href="/" id="closeModalPut"><i class="bi bi-x-circle"></i></a>
+        </div>
+
+        <div class="modal-body">
+           
+            <p>Tem certeza que deseja excluir o <%= pokemonDel.nome %></p>
+            <div id="btn-del">
+                <a id="no" href="/">Não</a>
+                <a id="yes" href="/remove/<%= pokemonDel.id %>">Sim</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
