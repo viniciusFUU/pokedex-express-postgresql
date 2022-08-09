@@ -1,8 +1,9 @@
 const Pokemon = require("../models/Pokemon");
+const orderById = { order: [["nome", "ASC"]] };
 
 const getAll = async (req, res) => {
   try {
-    const pokedex = await Pokemon.findAll();
+    const pokedex = await Pokemon.findAll(orderById);
     res.render("index", { pokedex, pokemonPut: null, pokemonDel: null });
   } catch (err) {
     res.status(500).send({ ett: err.message });
@@ -35,7 +36,7 @@ const create = async (req, res) => {
 const getById = async (req, res) => {
   try {
     const method = req.params.method;
-    const pokedex = await Pokemon.findAll();
+    const pokedex = await Pokemon.findAll(orderById);
     const pokemon = await Pokemon.findByPk(req.params.id);
 
     if (method == "put") {
