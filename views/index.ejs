@@ -22,6 +22,22 @@
             <% pokedex.forEach((pokemon) => { %>
         
                 <div class="card">
+
+                    <div class="dropdown">
+                        <div class="dropdown-button">
+
+                            <i class="bi bi-three-dots-vertical"></i>
+
+                        </div>
+
+                        <div class="dropdown-content">
+
+                            <a id="editar" href="/getById/<%= pokemon.id %>/put">Editar</a>
+                            <a id="deletar" href="/getById/<%= pokemon.id %>/delete">Apagar</a>
+                            
+                        </div>
+                    </div>
+
                     <img src="<%= pokemon.imagem %>" alt="">
                     <h3><%= pokemon.nome %></h3>
                     <p class="descricao"><%= pokemon.descricao %></p>
@@ -29,8 +45,6 @@
                     <p>Altura: <%= pokemon.altura %></p>
                     <p>Peso: <%= pokemon.peso %></p>
                     <p>Habilidade: <%= pokemon.habilidade %></p>
-                    <a id="editar" href="/getById/<%= pokemon.id %>/put">Editar</a>
-                    <a id="deletar" href="/getById/<%= pokemon.id %>/delete">Apagar</a>
                 </div>
         
             <%  })  %>

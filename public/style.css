@@ -142,7 +142,7 @@ section#cadastro form button:hover{
     cursor: pointer;
 }
 
-section#cards div.card a{
+/* section#cards div.card a{
     padding: .6rem;
     width: 80%;
     display: flex;
@@ -187,7 +187,7 @@ section#cards div.card a#deletar:hover{
     transition: .19s;
     cursor: pointer;
     border: 1px solid red;
-}
+} */
 
 footer{
     background-color: red;
@@ -382,4 +382,44 @@ div#btn-del a#yes:hover{
 .message i{
     cursor: pointer;
     font-size: 1.4rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropdown-button{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3 ease-in-out;
+    position: relative;
+}
+
+.dropdown-button:hover{
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.683);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 6rem;
+    margin-top: 1.8rem;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.721);
+    background-color: white;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    transition: all 0.3 ease-in-out;
+    color: #000;
+}
+
+.dropdown-content a:hover{
+    background-color: red;
+    color: white;
 }
